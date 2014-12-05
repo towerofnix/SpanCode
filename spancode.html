@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>spancode</title>
+		<style>
+			* {font-family: Arial;}
+		</style>
+
+		<!-- LOAD SPANCODE -->
+		<link rel="stylesheet" type="text/css" href="spancode.css">
+	</head>
+	<body>
+		<h1>SpanCode</h1>
+		<div class="code" style="height:10em;"><ol>
+			<li>
+				<span class="comment"># Demonstrating SpanCode, in Python</span>
+			<li>
+				<span class="keyword"><a href="https://docs.python.org/2/library/functions.html#print">print</a></span> <span class="string">"Hello, world!"</span>
+			</li>
+			<li>
+				<span class="keyword">print</span> 
+				<span class="string">"I can do math: 5 + 3 = "</span>, 
+				<span class="number">5</span> 
+				<span class="operator">+</span> 
+				<span class="number">3</span>
+			</li>
+			<li>
+				<span class="keyword">def</span>
+				<span class="func">get_input</span>(<span class="arg">msg</span>):
+			</li>
+			<li>&#8194;<span class="keyword">print</span> msg</li>
+			<li>&#8194;<span class="keyword">return</span> <span class="keyword"><a href="https://docs.python.org/2/library/functions.html#raw_input">raw_input</a></span>(<span class="string">"> "</span>)
+			</li>
+			<li></li>
+			<li><span class="keyword">def</span> <span class="func">say_hi</span>(<span class="arg">name</span>):</li>
+			<li>&#8194;<span class="keyword"><a href="https://docs.python.org/2/tutorial/controlflow.html#if-statements">if</a></span> name <span class="operator">==</span> <span class="string">""</span>:</li>
+			<li>&#8194;&#8194;<span class="keyword">print</span> <span class="string">"Hello, somebody!"</span></li>
+			<li>&#8194;<span class="keyword">else</span>:</li>
+			<li>&#8194;&#8194;<span class="keyword">print</span> <span class="string">"Hello,"</span>, name</li>
+			<li></li>
+			<li>name = get_input(<span class="string">"Who are you?"</span>)</li>
+			<li>say_hi(name)</li>
+		</ol></div>
+		<p><b>SpanCode</b> is an HTML / CSS3 tool for making better <small>(pretend)</small> code displayers. Since all the customization happens in a single CSS3 file, you can make it look exactly the way you want. It doesn't check for syntax, so whether your code is in BASIC, Python, Java, or ActionScript - or even your own custom language, if you want! - it won't wonder <i>why</i> the code is like that - you are the one who makes the syntax.</p>
+
+		<hr>
+
+		<h3>List of span-classes</h3>
+		<blockquote>
+			<dl style="list-style: none">
+				<li><code>number</code>: A number, be it an integer or decimal.</li>
+
+				<li><code>operator</code>: Likely used for math operators, or logic operators such as <code><=</code> or <code>==</code>.</li>
+
+				<li><code>string</code>: Nearly anybody who programs knows this - a piece of text, often within quotes such as <code>"Hello world!"</code>.</li>
+
+				<li><code>keyword</code>: A keyword, like <code>print</code> or <code>class</code>.</li>
+
+				<li><code>func</code>: A function when being defined.</li>
+
+				<li><code>arg</code>: An argument that a function takes.</li>
+
+				<li><code>comment</code>: A comment, for giving information about the program often, or a todo comment that reminds you to do things there (if in some IDE).</li>
+			</dl>
+		</blockquote>
+		<div class="code"><ol style="list-style: none">
+			<li><span class="number">52.14</span> <span class="comment">// number</span></li>
+			<li><span class="operator">+</span> <span class="comment">// operator</span></li>
+			<li><span class="string">"Hello world!"</span> <span class="comment">// string</span></li>
+			<li><span class="keyword">class</span> {} <span class="comment">// keyword</span></li>
+			<li>
+				<span class="keyword">void</span>
+				<span class="func">SayHi</span>() {}
+				<span class="comment">// func</span>
+			</li>
+			<li>
+				<span class="keyword">void</span>
+				<span class="func">HelloWorld</span>(<span class="arg">String[] args</span>) {}
+				<span class="comment">// arg</span>
+			</li>
+			<li><span class="comment">// comment</span></li>
+		</ol></div>
+		</dl>
+
+		<hr>
+
+		<h3>Using SpanCode</h3>
+		<p>The first thing your going to want to do is download spancode. You can get the default css file <a href="spancode.css">here</a>. Next, you need to import it in your <code>.html</code> file. To do that, put this code into the <code>&lt;head&gt;</code> of your file:
+		<div class="code"><ol style="list-style: none;">
+			<li><span class="keyword">&lt;head&gt;</span></li>
+			<li>&#8194;...</li>
+			<li>&#8194;<span class="comment">&lt;!-- LOAD SPANCODE --&gt;</span></li>
+			<li>
+				&#8194;<span class="keyword">&lt;link</span> <span class="arg">rel=</span><span class="string">"stylesheet"</span>
+				<span class="arg">type=</span><span class="string">"text/css"</span>
+				<span class="arg">href=</span><span class="string">"spancode.css"</span><span class="keyword">&gt;</span>
+			</li>
+		</ol></div>
+		<p>After that, you need to create a <code>div</code> with a class of <code>"code"</code>. <i>Make sure it's not a <code>&lt;code&gt;</code>, but a <code>&lt;div&gt;</code>.</i>
+		<p>
+	</body>
+</html>

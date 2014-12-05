@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>themes demo | spancode</title>
+		<link rel="stylesheet" type="text/css" href="../spancode.css">
+		<link rel="stylesheet" type="text/css" href="demos.css">
+		<link rel="stylesheet" type="text/css" href="../themes/theme_all_hallows_eve.css">
+		<style>
+		html {background-color: black;}
+
+		#page {
+			background-color: white;
+			position: absolute;
+			width: 80%;
+			left: 10%;
+			top: 0%;
+			padding: 10px;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="page">
+			<h1>When the night is dark..</h1>
+			<div class="code"><ol>
+				<li><span class="keyword">echo</span> <span class="string">"We can use a dark theme."</span>
+			</ol></div>
+			<hr>
+			<p>To load a dark theme, just use the following code in your HTML document:</p>
+			<div class="code"><ol style="list-style:none;">
+				<li><span class="keyword">&lt;link <span class="arg">rel=</span><span class="string">"stylesheet"</span> <span class="arg">type=</span><span class="string">"text/css"</span> <span class="arg">href=</span><span class="string">"themes/</span><span class="comment">THEME NAME</span><span class="string">"</span>&gt;</span></li>
+			</ol></div>
+			<p>All your code will now be styled with that theme!</p>
+			<blockquote class="info">A list of themes can be found in the <code>themes</code> folder.</blockquote>
+			<hr>
+			<p>To create your own theme, create a copy of <code>themes/theme_blank_light.css</code> (or <code>dark.css</code> if you prefer that), and change the styling in it. Keep in mind that you need to change your <code>href</code> in your HTML file to load it!</p>
+			<div class="code"><ol style="list-style:none;">
+				<li><span class="keyword">&lt;link <span class="arg">rel=</span><span class="string">"stylesheet"</span> <span class="arg">type=</span><span class="string">"text/css"</span> <span class="arg">href=</span><span class="string">"my_theme.css"</span>&gt;</span></li>
+			</ol></div>
+		</div>
+	</body>
+</html>

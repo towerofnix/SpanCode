@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>lineless code demo | spancode</title>
+		<link rel="stylesheet" type="text/css" href="../spancode.css">
+		<link rel="stylesheet" type="text/css" href="demos.css">
+	</head>
+	<body>
+		<h1>No Line-count in Code</h1>
+		<div class="code"><ol style="list-style: none;">
+			<li><span class="comment"># You probably know this is line 1.</span></li>
+			<li><span class="comment"># This is line 2...</span></li>
+			<li>&#8194;</li>
+			<li>&#8194;</li>
+			<li><span class="comment"># Okay, so this is line 5.</span></li>
+		</ol></div>
+
+		<hr>
+
+		<p>Turns out it's good for doing things other than having fun with comments! <small>:o</small> For example, it could come in handy for representing the something that doesn't happen in any exact spot in the program:
+		<div class="code"><ol style="list-style: none;">
+			<li><span class="keyword">&lt;body&gt;</span>
+			<li>&#8194;<span class="comment">...</span>
+			<li>&#8194;<span class="keyword">&lt;p&gt;</span>Yeah, yeah, this isn't in a span.<span class="keyword">&lt;/p&gt;</span></li>
+			<li>&#8194;<span class="comment">...</span></li>
+			<li><span class="keyword">&lt;/body&gt;</span></li>
+		</ol></div>
+		<p>To add it in, just remember this: Inside of your <code>div class="code"</code> is an <code>ol</code>. That stands for <b>O</b>rdered <b>L</b>ist, so all you need to do to make it lineless is add the attribute <code>style="list-style: none"</code> to it.
+
+		<div class="code"><ol style="list-style: none;">
+			<li><span class="keyword">&lt;div <span class="arg">class=</span><span class="string">"code"</span>&gt;&lt;ol <span class="arg">style=</span><span class="string">"list-style: none;"</span>&gt;
+			</li>
+		</ol></div>
+	</body>
+</html>

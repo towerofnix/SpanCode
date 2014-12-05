@@ -1,0 +1,46 @@
+.code ol li {
+	font-family: Courier;
+	font-size: 12px;
+}
+
+.code ol li .number {
+	/* Numbers */
+	font-family: inherit;
+	color: inherit;
+}
+
+.code ol li .operator {
+	/* Math / logic operators */
+	font-family: inherit;
+	color: inherit;
+}
+
+.code ol li .string {
+	/* Strings / text */
+	font-family: inherit;
+	color: green;
+}
+
+.code ol li .keyword {
+	/* Keywords */
+	font-family: inherit;
+	color: purple;
+}
+
+.code ol li .func {
+	/* Functions (when defining) */
+	font-family: inherit;
+	color: blue;
+}
+
+.code ol li .arg {
+	/* Function arguments (when defining) */
+	font-family: inherit;
+	color: inherit;
+}
+
+.code ol li .comment {
+	/* Comments */
+	font-family: inherit;
+	color: red;
+}
